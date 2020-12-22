@@ -1,0 +1,505 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.housing a {
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.housing span {
+  color: #00cdce;
+}
+.nav_list ul {
+  list-style: none;
+  padding-top: 3rem;
+}
+.nav_list ul li {
+  display: inline;
+  padding: 0.5rem;
+  margin: 0 1.5rem;
+  border-bottom: 2px solid white;
+  transition: all 1s;
+}
+.nav_list ul li:hover {
+  border-bottom: none;
+}
+.nav_list ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav_list ul li:hover a {
+  color: #00cdce;
+}
+
+#slider {
+  margin-bottom: 5rem;
+}
+.carousel-item h5 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.carousel-item p {
+  font-size: 1.5rem;
+}
+.carousel-caption {
+  font-size: 3rem;
+  margin-bottom: 35vh;
+}
+.about_content h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 4rem;
+}
+.about_content {
+  margin: 0 15%;
+  font-weight: bold;
+}
+.about_content_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+}
+.about_item {
+  text-align: center;
+}
+
+.about_item i {
+  font-size: 2rem;
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 50%;
+  transition: all 0.5s;
+  margin-bottom: 1rem;
+}
+.about_item i:hover {
+  background-color: #00cdce;
+  color: white;
+}
+.about_us h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #00cdce;
+}
+.about_us {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+.stat {
+  background-color: #00cdce;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 5rem;
+}
+.stat {
+  padding-top: 5rem;
+  font-weight: bold;
+}
+.stat h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+}
+.stat_item_content {
+  text-align: center;
+}
+.stat_item_content h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+}
+.stat_item_content p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stat_item_content {
+  text-align: center;
+}
+.stat_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 10%;
+}
+.blog h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.blog-item {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10%;
+}
+.card {
+  border-top: 4px solid #00cdce;
+}
+.card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00cdce;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.card-title:hover {
+  color: black;
+}
+
+.card-text {
+  font-weight: bold;
+}
+.btn {
+  border: 1px solid black;
+  background-color: black;
+  color: #00cdce;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.btn:hover {
+  color: white;
+}
+.modal-dialog {
+  margin: 0 30%;
+}
+.modal-content {
+  width: 600px;
+  height: 750px;
+}
+.modal-header {
+  background-color: #00cdce;
+  text-align: center;
+  display: inline;
+}
+.modal-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  padding-top: 0.5rem;
+}
+.modal-body img {
+  width: 100%;
+}
+.modal-body p {
+  text-align: justify;
+  margin: 5% 5%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.close span {
+  color: red;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.video {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 5rem 0;
+}
+.width-50 {
+  height: 400px;
+  background-image: url(./../images/video.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.width-50 i {
+  position: relative;
+  top: 45%;
+  left: 45%;
+  font-size: 5rem;
+  color: #00cdce;
+}
+.width-50-text {
+  text-align: center;
+  background-color: #00cdce;
+  padding: 4rem;
+  font-weight: bold;
+}
+.width-50-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.width-50-text p {
+  color: white;
+}
+#exampleModalCenter .modal-content {
+  position: relative;
+  height: 400px;
+  padding-top: 2rem;
+}
+#exampleModalCenter button {
+  position: absolute;
+  top: -11%;
+  left: -7%;
+}
+#exampleModalCenter button span {
+  color: white;
+}
+.modal-body iframe {
+  width: 100%;
+  height: 300px;
+}
+.portfolio h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.portfolio-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 15%;
+  grid-gap: 1rem;
+}
+.portfolio-item {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: all 0.5s;
+  text-align: center;
+  padding-top: 5%;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.text {
+  width: 100%;
+  padding: 0 10%;
+}
+.text h1 {
+  padding: 5% 0;
+  font-size: 2rem;
+  color: #00cdce;
+  border-top: 2px solid #00cdce;
+  border-bottom: 2px solid #00cdce;
+}
+.text p {
+  font-weight: bold;
+}
+.subscribe {
+  background-color: #00cdce;
+  margin: 5rem 0;
+  text-align: center;
+  padding: 3rem 20%;
+  height: 400px;
+}
+.click-title {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.click p {
+  color: white;
+  font-weight: bold;
+}
+.sub-email input {
+  width: 60%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.send-button .btn {
+  color: white;
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+}
+.container-title {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.team-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 5rem;
+}
+.team-info img {
+  width: 100%;
+}
+.team-caption {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+}
+.team-caption h4 {
+  color: #00cdce;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.team-caption p {
+  font-weight: bold;
+  color: white;
+}
+.team-caption ul {
+  list-style: none;
+}
+.team-caption ul li {
+  display: inline;
+  margin: 0 10px;
+}
+.team-caption ul li a i {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: solid 2px #fff;
+  color: #fff;
+  transition: all 0.5s;
+}
+.team-caption:hover h4 {
+  color: white;
+}
+.team-caption ul li a i.fa.fa-facebook:hover {
+  background-color: blue;
+}
+.team-caption ul li a i.fa.fa-twitter:hover {
+  background-color: rgb(96, 96, 240);
+}
+.team-caption ul li a i.fa.fa-rss:hover {
+  background-color: orangered;
+}
+.maps {
+  width: 100%;
+  height: 400px;
+  background-color: gray;
+  margin-bottom: 5rem;
+}
+.maps iframe {
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+}
+.container-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.container {
+  margin-bottom: 5rem;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0 5%;
+}
+.form-left {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 21px;
+}
+.form-left input {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgb(250, 243, 243);
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid black;
+}
+textarea {
+  background-color: rgb(250, 243, 243);
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+}
+.submit input {
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #00cdce;
+  padding: 2rem;
+}
+.copyright {
+  width: 60%;
+  text-align: right;
+  padding-right: 7rem;
+  font-weight: bold;
+}
+.icons {
+  width: 40%;
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+.copyright p {
+  color: white;
+}
+.copyright p a {
+  color: red;
+}
+.icons ul {
+  list-style: none;
+}
+.icons ul li {
+  display: inline;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.icons ul li a span {
+  color: white;
+  border: 1px solid white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.backtotop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+.backtotop .backtotoplink {
+  font-size: 3rem;
+  opacity: 0;
+}
+.backtotop .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.backtotop .cd-top--fade-out {
+  opacity: 0.5;
+}
